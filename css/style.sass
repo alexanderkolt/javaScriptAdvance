@@ -1,0 +1,23 @@
+$background_color: #000
+$logoText_color: #fff
+%hover_btn
+    &:hover
+        background-color: #acacac
+        transition-duration: 0.3s
+    
+    
+header 
+    width: 100%
+    height: 100px
+    background-color: $background_color
+    display: flex
+    align-items: center
+    justify-content: space-around
+    color: $logoText_color
+    .btn-cart
+       @extend %hover_btn
+.products
+    display: flex
+    justify-content: space-around
+    .buy-btn
+        @extend %hover_btn
